@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Justin's Portfolio</title>
+    <!-- Later add font and other css link -->
+    <!-- <link rel="stylesheet" type="text/css" href="./style.css"> -->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Caveat|Handlee|Lobster|Oswald|Pacifico|Permanent+Marker|Satisfy|VT323" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Chewy|Nothing+You+Could+Do|Shrikhand" rel="stylesheet"> -->
+    <style>
+    /* * {
+      padding: 0;
+      margin: 0;
+    } */
+    .spacer {
+      height: 4em;
+    }
+    #logo {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 18%;
+      opacity: 0.7;
+      border: 1px solid yellow;
+      background: #eee;
+    }
+    h1 {
+      font-family: 'Lobster', sans-serif;
+      text-align: center;
+      font-size: 4em;
+      color: #ff7878;
+      text-shadow: 2px 2px 4px #000000;
+    }
+    h1:hover {
+      color: #9EF3C1;
+      font-style: italic;
+      text-decoration: underline;
+    }
+    h2 {
+      font-size: 2em;
+    }
+    ul, ol {
+      margin-left: 30px;
+      margin-bottom: 20px;
+    }
+    body {
+      background: #005AA7;
+      background: -webkit-linear-gradient(to right, #FFFDE4, #005AA7);
+      background: linear-gradient(to right, #FFFDE4, #005AA7);
+      /* font-size: 1.2em; */
+      font-family: monospace;
+    }
+    /*
+    body {
+      background-image: url('./image/background.jpg');
+    }
+    */
+    .wrapper {
+      background-color: rgb(255, 86, 86);
+      font-family: 'VT323';
+      border: #e600ac 3px;
+      width: 940px;
+      padding: 30px;
+      margin: auto;
+      /* font-size: 1.0em; */
+    }
+    #school_course{
+      font-family: 'Caveat';
+      font-size: 2em;
+      color: purple;
+    }
+    #manifesto-div {
+      width: 60%;
+      /* To update later */
+      /* text-align: center; */
+      /* background-color: rgb(255, 86, 86); */
+      /* font-family: 'VT323'; */
+      /* border: #e600ac 3px red; */
+      width: 940px;
+      padding: 30px;
+      margin: auto;
+    }
+    #manifesto-title {
+      font-family: 'Nothing You Could Do', cursive;
+      font-size: 2.5em;
+      color: #155c3c;
+      text-align: center;
+    }
+    .manifesto-p {
+      font-size: 1.5em;
+    }
+    #self_image {
+      border-radius: 50%;
+      width: 40%;
+    }
+
+    #interest-id {
+      font-size: 1.5em;
+    }
+    </style>
+  </head>
+  <body>
+    <div class='spacer'></div>
+    <!-- header for big intro -->
+    <h1 id="main_title">Justin(Sung)'s portal</h1>
+    <div class='spacer'></div>
+    <!-- by using float have it float to right -->
+    <!-- put more of personal info and such here -->
+    <div id='manifesto-div'>
+      <img id='self_image' style='float: right;' alt='self_image' src='./image/self.jpg'/>
+        <h2>Manifesto</h2>
+          <p class='manifesto-p'>
+            Former Biotech Researcher:
+            I learned the beauty of analytical skills and value of critical thinking: <em>the artistry of science.</em>
+            Now, <strong>back to school pursuing App development at North college</strong>,
+            I’d like to add the artistry of science to programming to <em>develop user-friendly, efficient and resource saving apps.</em>
+            <a target="_blank" href='https://blooming-mesa-91250.herokuapp.com/#/'>more ...</a>
+          </p>
+
+        <h2>Current Focus:</h2>
+          <p class='manifesto-p'>
+            Interested in many <em>things/activities</em> and engaged to <em>many organizations and volunteeer works.</em>
+            Occasionally, I volunteer at <strong>PNB school</strong> to chaperone students and local <strong>food bank</strong> as well.
+            Sure, love to watch good <strong>Tv shows</strong> to wind down after long day at school and work.
+            Linkes are below to check them as well!
+            Also, love <strong>North seattle gym(Wellness Center)!</strong>
+          </p>
+          <!-- and related links using unordered list -->
+          <ul id='interest-id'>
+            <li><a target="_blank" href='https://www.pnb.org/pnb-school/'>PNB School</a></li>
+            <li><a target="_blank" href='http://www.udistrictfoodbank.org/'>U-district Food Bank</a></li>
+            <li><a target="_blank" href='https://www.imdb.com/title/tt2701582/'>Endeavour</a></li>
+            <li><a target="_blank" href='https://www.northseattle.edu/wellness-center'>North Seattle Wellness Center</a></li>
+          </ul>
+          <h3><strong><a target="_blank" href='https://validator.w3.org/nu/?doc=http%3A%2F%2Fcompass.northseattle.edu%2F~sbyun%2Fit111%2Findex.html'>Valid!</a></strong></h3>
+    </div>
+    <!-- validator and for the record screen shot was captured in image folder -->
+
+   <div class='spacer'></div>
+    <hr>
+   <div class='spacer'></div>
+   <!-- added school logo and wonder how i'm gonna use it later -->
+    <img id='logo' alt='school_logo' src='./image/seattle_college.jpg'/>
+   <div class='spacer'></div>
+    <div class='wrapper'>
+        <!-- assignment repos -->
+        <h2 id='school_course'>Assignments Repos</h2>
+            <ol>
+              <li><a target="_blank" href='http://compass.northseattle.edu/~sbyun/it111/index.html'>#HW01: Portal due 10/12</a></li>
+              <li><a target='_blank' href='http://compass.northseattle.edu/~sbyun/it111/strange.html'>#HW02: Stranger Things due 10/19</a></li>
+              <li><a target='_blank' href='http://compass.northseattle.edu/~sbyun/it111/big/index.html'>#HW03: Big due 11/02</a></li>
+              <li><a target='_black' href='http://compass.northseattle.edu/~sbyun/it111/practical_test.html'>Practical Test</a></li>
+              <li><a target='_black' href='http://compass.northseattle.edu/~sbyun/it111/HW04/index.html'>#HW04: Wireframe due 11/09</a></li>
+              <li><a target='_black' href='http://compass.northseattle.edu/~sbyun/it111/HW05/form.html'>#HW05: Form due 11/16</a></li>
+              <li><a target='_black' href='http://compass.northseattle.edu/~sbyun/it111/final/index.html'>#HW06: Template due 11/26</a></li>
+              <li><a target='_black' href='http://compass.northseattle.edu/~sbyun/it111/rotating_img/blueberry.html'>Extra-Credit: Rotating Images</a></li>
+              <li><a target='_black' href='http://compass.northseattle.edu/~sbyun/it111/final12:11/index.html'>#Final: due 12/11</a></li>
+            </ol>
+          <!-- more of lists practicing unordered lists and ordered lists -->
+      <h2>Current Courses/Academic Interests | '18 Fall</h2>
+        <ul>
+          <li>Java, CSC142</li>
+          <li>Web Authoring, IT111</li>
+          <li>UNIX/LINUX, IT135</li>
+        </ul>
+    <h2>Winter Qtr Schedule/Priority Classes | '18-19 Winter</h2>
+      <label>Order of focus</label>
+      <ul>
+        <li>Java, CSC143</li>
+        <li>Continuation of UNIX/LINUX</li>
+        <li>Undecided:</li>
+          <!-- <ul>
+            <li>likely Statistics?</li>
+            <li>maybe Cloud computing?</li>
+            <li>maybe mobile dev?</li>
+          </ul> -->
+      </ul>
+    </div>
+  </body>
+</html>

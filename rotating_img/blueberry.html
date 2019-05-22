@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rotating Image Slider</title>
+
+<!--
+/*
+ * jQuery Blueberry Slider v0.4 BETA
+ * http://marktyrrell.com/labs/blueberry/
+ *
+ * Copyright (C) 2011, Mark Tyrrell <me@marktyrrell.com>
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ */
+-->
+<link rel="stylesheet" href="css/reset.css" type='text/css' />
+<link href='css/style.css' type='text/css' rel='stylesheet' />
+<link rel="stylesheet" href="css/blueberry.css" type='text/css' />
+<style type="text/css">
+
+* {
+	margin: 0;
+	border: 0;
+	padding: 0;
+}
+
+.blueberry { max-width: 840px; }
+</style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+<script src="jquery.blueberry.js"></script>
+
+<script>
+$(window).load(function() {
+	$('.blueberry').blueberry();
+});
+</script>
+
+</head>
+<body class='about'>
+    <nav>
+      <ul>
+        <li><a href='index.html'>Home</a></li>
+        <li><a href='about.html'>About</a></li>
+        <li><a href='resume.html'>Resume</a></li>
+        <li><a href='portfolio.html'>Portfolio</a></li>
+        <li><a href='contact.html'>Contact</a></li>
+				<li><img class='sns' src='img/facebook.png' alt='facebook' /></li>
+				<li><img class='sns' src='img/twitter.png' alt='twitter' /></li>
+				<li><img class='sns' src='img/insta.png' alt='insta' /></li>
+      </ul>
+    </nav>
+<!--
+<div id="header">
+  <h1><img src="http://marktyrrell.com/labs/blueberry/img/logo.png" alt="Blueberry" /></h1>
+</div>
+-->
+<div id="wrapper">
+  <!--<div id="content">-->
+
+<!-- blueberry -->
+    <div class="blueberry">
+      <ul class="slides">
+        <li><img src="img/slide1.jpg" /></li>
+        <li><img src="img/slide2.jpg" /></li>
+        <li><img src="img/slide3.jpg" /></li>
+        <li><img src="img/slide4.jpg" /></li>
+      </ul>
+    </div>
+<!-- blueberry -->
+		<main>
+		<h1>Current Project</h1>
+        <hr>
+        <img id='SDOT' src='img/SDOT.jpg' alt='SDOT' />
+        <p>By June of 2019, we will produce a Five-Year Information Infrastructure Plan (IIP) to distribute current, accurate and actionable information about the state of Seattle’s transportation system to users.
+
+The IIP will support SDOT’s modal plans. It will set the goals and strategies for improving the flow and quality of information within SDOT and from SDOT and service providers to the users of the transportation system. The IIP will deliver an actionable set of policies, projects and performance metrics for the next five years.
+
+We need the IIP because using and managing a city’s transportation system is increasingly about the access to and availability of accurate real-time (or near real-time) information.
+
+We will develop the IIP in partnership with the community. The IIP will be guided by the values and principles set out in Seattle’s Comprehensive Plan and the Seattle New Mobility Playbook.
+
+The IIP will be technology agnostic and focus instead on the information needs of the users and system managers. It will set policies for protecting the privacy and rights of users and communities and set a framework for protecting the cyber security of users, communities and SDOT’s information systems. It will outline the information and interoperability requirements for transportation service providers to operate in Seattle. It will design accountability into the system by setting standards for accessibility, transparency, application interfaces, and open data protocols.
+</P>
+      <img id='SDOT2' src='img/SDOT2.jpg' alt='SDOT2' />
+<p>
+We will be successful if the IIP equips SDOT to turn information about the transportation system into actionable assets that will deliver value to everyone in the city. We will be successful if the IIP helps SDOT and Seattle to be more resilient in the face of disruptions, technological or otherwise.
+
+We will be successful if the information infrastructure we build because of the IIP allows users of the transportation system (individuals, organizations and automatons; users and providers) to make better informed choices; and managers of the system (SDOT and partner agencies) to deliver a more user friendly, seamless, and efficient transportation experience.
+
+We will be successful if the information infrastructure we build because of the IIP exposes the social and racial inequality and injustice in our transportation system. The IIP should help us to dismantle these inequalities and prevent their institutionalization in emerging transportation services and in our investments in the system.
+
+</p>
+</main>
+  <!--</div>-->
+</div>
+
+</body>
+</html>

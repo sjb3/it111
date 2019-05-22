@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Table</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      #wrapper {
+        width: 940px;
+        margin: 20px auto;
+      }
+      main {
+        width: 580px;
+        float: left;
+        background: #C9CACE;
+      }
+      aside {
+        width: 340px;
+        float: right;
+      }
+      table {
+        width: 560px;
+        border-collapse: collapse;
+        margin: 0 auto;
+        border: 1px solid red;
+      }
+      th {
+        background: white;
+        padding: 15px;;
+        color: #0C88C2;
+        font-size: 2em;
+      }
+      td {
+        border: 1px solid red;
+        width: 25%;
+        vertical-align: top;
+        padding: 18px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id='wrapper'>
+      <main>
+        <table>
+          <!-- first row -->
+          <tr>
+            <th colspan='4'>table heading</th>
+          </tr>
+          <tr>
+            <td>b</td>
+            <td>b</td>
+            <td>c</td>
+            <td>d</td>
+          </tr>
+          <tr>
+            <td>a</td>
+            <td>b</td>
+            <td>c</td>
+            <td>d</td>
+          </tr>
+        </table>
+      </main>
+      <aside>
+        <h3>Aside</h3>
+      </aside>
+    </div><!-- end of wrapper -->
+  </body>
+</html>

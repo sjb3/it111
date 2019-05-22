@@ -1,0 +1,73 @@
+.spacer {
+  height: 4em;
+}
+#logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 18%;
+  opacity: 0.7;
+}
+h1 {
+  font-family: 'Lobster', sans-serif;
+  text-align: center;
+  font-size: 4em;
+  color: #ff7878;
+  text-shadow: 2px 2px 4px #000000;
+}
+h1:hover {
+  color: #9EF3C1;
+  font-style: italic;
+  text-decoration: underline;
+}
+h2 {
+  font-size: 2em;
+}
+body {
+  background: #005AA7;
+  background: -webkit-linear-gradient(to right, #FFFDE4, #005AA7);
+  background: linear-gradient(to right, #FFFDE4, #005AA7);
+  /* font-size: 1.2em; */
+  font-family: monospace;
+}
+/*
+body {
+  background-image: url('./image/background.jpg');
+}
+*/
+.wrapper {
+  background-color: rgb(255, 86, 86, 0.15);
+  font-family: 'VT323';
+  border: #e600ac 3px;
+  width: 940px;
+  padding: 30px;
+  margin: auto;
+  /* font-size: 1.0em; */
+}
+#school_course{
+  font-family: 'Caveat';
+  font-size: 2em;
+  color: purple;
+}
+#manifesto-div {
+  width: 60%;
+  text-align: center;
+
+}
+#manifesto-title {
+  font-family: 'Nothing You Could Do', cursive;
+  font-size: 2.5em;
+  color: #155c3c;
+  text-align: center;
+}
+.manifesto-p {
+  font-size: 1.5em;
+}
+#self_image {
+  border-radius: 50%;
+  width: 40%;
+}
+
+#interest-id {
+  font-size: 1.5em;
+}

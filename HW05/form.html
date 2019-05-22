@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Form Page</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      /* nav */
+nav {
+  height: 50px;
+  background-color: #333;
+    /* background-color: rgb(141, 255, 244, .8); */
+  color: white;
+  position: fixed;
+  width: 100%;
+}
+nav ul {
+  /* width: 1100px; */
+  width: 89%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+nav li {
+  float: left;
+  list-style-type: none;
+  line-height: 50px;
+  width: 33.33%;
+  text-align: center;
+  color: white;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+}
+nav a:hover {
+  background-color: red;
+  /* color: yellow;
+  font-style: italic; */
+  display: block;
+}
+      #wrapper {
+        /* width: 940px; */
+        margin: 20px auto;
+        width: 78%;
+        max-width: 1100px;
+        /* margin-bottom: 30px; */
+      }
+      header {
+        /* background: yellow; */
+        background-image: url('images/teapot2.jpg');
+        background-repeat:repeat;
+        /* background-size: cover; */
+        height: 300px;
+      }
+      main {
+        float: left;
+        /* width: 580px; */
+        width: 59.7%;
+      }
+      aside {
+        margin-top:20px;
+        padding: 15px 15px 15px 15px;
+        background:rgba(141, 255, 244,.6);
+        /* width: 340px; */
+        width: 36.17%;
+        float: right;
+        font-style: italic;
+      }
+      /* footer */
+      footer {
+        height: 50px;
+        clear: both;
+        margin: 30px auto 0 auto;
+        background-color: #333;
+          /* background-color: rgb(141, 255, 244, .8); */
+        color: white;
+      }
+      footer li {
+        float: left;
+        list-style-type: none;
+        line-height: 50px;
+        /* margin: 0 30px 0 30px; */
+        width: 25%;
+        /* color: #E85484;
+        font-style: italic; */
+        text-align: center;
+        color: white;
+      }
+
+      footer li:hover {
+        color: red;
+      }
+      footer a {
+        color: white;
+        text-decoration: none;
+      }
+      footer a:hover {
+        color: yellow;
+        display: block;
+      }
+      form {
+        max-width: 580px;
+        background-image: url('images/teapot.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* opacity: 0.5;
+        filter: alpha(opacity=50); */
+        color: red;
+        margin-bottom: 30px;
+      }
+
+      fieldset {
+        padding: 10px;
+        border: 1px solid red;
+      }
+      label {
+        display: block;
+        margin-bottom: 5px;
+      }
+      input[type=text],
+      input[type=email] {
+        height: 20px;
+        width: 98%;
+        margin-bottom: 10px;
+      }
+      input[type=radio],
+      input[type=checkbox]{
+        margin-right: 7px;
+      }
+      input#submit {
+        background-color: red;
+        border: none;
+        color: white;
+        padding: 15px 30px;
+        text-align: center;
+        text-decoration: none;
+        font-style: italic;
+        display: inline-block;
+        font-size: 14px;
+      }
+      form ul {
+        margin-bottom: 10px;
+      }
+      form li {
+        list-style-type: none;
+        /* margin-left: 15px; */
+        margin-bottom: 6px;
+      }
+      textarea {
+        width: 98%;
+        margin-bottom: 10px;
+        resize: both;
+      }
+      legend {
+        font-size: 1.3em;
+        color: black;
+        padding: 8px;
+        font-style: italic;
+      }
+      /* images */
+      img {
+        max-width: 100%;
+        display: block;
+        border: 1px solid grey;
+      }
+      img#logo {
+        width: 40px;
+        /* margin-top: 5px; */
+        margin: 5px auto 0 auto;
+      }
+      img#aside_img {
+        margin: 0 auto;
+        width: 100%;
+      }
+      figure {
+        margin-bottom: 30px;
+      }
+      figcaption {
+        padding: 8px;
+        font-size: 0.8em;
+        background: rgb(141, 255, 244);
+      }
+      div h1 {
+        height: 50px;
+        margin: 0 auto;
+        background: #333;
+      }
+/*+++++++++++++++++++ Typography +++++++++++++++++++*/
+    h1 {
+      color: rgba(141, 255, 244, 0.6);
+      margin: 100px auto 10px auto;
+      font-family: "Lucida Console", Monaco, monospace;
+      font-size: 2em;
+      line-height: 1.5;
+      text-align: center;
+    }
+/*+++++++++++++++++++ @media +++++++++++++++++++*/
+  @media screen and (max-width: 800px) {
+    #wrapper {
+      /* width: 940px; */
+      /* margin: 20px auto; */
+      width: 95%;
+      /* max-width: 1100px; */
+    }
+    nav ul {
+      /* width: 1100px; */
+      width: 96%;
+      /* max-width: 1100px;
+      margin: 0 auto; */
+    }
+    /* footer li {
+      width: 96%;
+    } */
+    main {
+      float: left;
+      /* width: 580px; */
+      width: 56%;
+    }
+    aside {
+      margin-top:20px;
+      padding: 15px 15px 15px 15px;
+      background:rgba(141, 255, 244,.6);
+      /* width: 340px; */
+      width: 39%;
+      float: right;
+      font-style: italic;
+    }
+  }
+  /* from 700 break point, it goes to the mobile version */
+  @media screen and (max-width: 700px) {
+    #wrapper {
+      /* width: 940px; */
+      /* margin: 20px auto; */
+      width: 95%;
+      /* max-width: 1100px; */
+    }
+    nav ul {
+      /* width: 1100px; */
+      width: 96%;
+      /* max-width: 1100px;
+      margin: 0 auto; */
+    }
+    /* footer li {
+      width: 96%;
+    } */
+    main {
+      float: none;
+      width: auto;
+    }
+    aside {
+      border: none;
+      float: none;
+      width: auto;
+    }
+    aside img {
+      display:block;
+      margin: 0 auto;
+    }
+  }
+
+    </style>
+
+  </head>
+  <body>
+    <nav>
+  <ul>
+    <li><a href='form.html'>HOME</a></li>
+    <li><a href='http://compass.northseattle.edu/~sbyun/it111/index.html'>Portal</a></li>
+    <li><a href='https://www.google.com/'>Work in progress</a></li>
+  </ul>
+</nav>
+<header>
+</header>
+<div><h1>Rainy days Tea</h1></div>
+    <div id='wrapper'>
+      <main>
+        <form action='formhandler.php' method='post'>
+          <fieldset>
+            <legend>Order Form</legend>
+              <label>Name</label>
+              <input type='text' name='name' />
+              <label>Em@il</label>
+              <input type='text' name='email' />
+              <label>Phone #</label>
+              <input type='text' name='phone' />
+              <label>Size</label>
+              <ul>
+                <li><input type='radio' name='size' value='large'>Large</li>
+                <li><input type='radio' name='size' value='medium'>Medium</li>
+                <li><input type='radio' name='size' value='small'>Small</li>
+              </ul>
+              <label>Beverage</label>
+              <ul>
+                <li><input type='checkbox' name='beverage[]' value='coffee'>Coffee</li>
+                <li><input type='checkbox' name='beverage[]' value='earl_grey'>Earl Grey</li>
+                <li><input type='checkbox' name='beverage[]' value='green_tea'>Green Tea</li>
+                <li><input type='checkbox' name='beverage[]' value='fizzy'>Fizzy</li>
+                <li><input type='checkbox' name='beverage[]' value='water'>Water</li>
+              </ul>
+              <label>To go?</label>
+              <ul>
+                <li><input type='radio' name='togo' value='togo'>To go</li>
+                <li><input type='radio' name='togo' value='take_in'>Take In</li>
+              </ul>
+              <label>Comments</label>
+              <textarea name="comments" rows="10"></textarea>
+              <input id='submit' type='submit' value='Order'>
+          </fieldset>
+        </form>
+      </main>
+      <aside>
+        <fieldset>
+        <legend>Our Service!</legend>
+    				<figure>
+    					<img id='aside_img' src='images/cat_tea.gif' alt='Cat TeaTime'/>
+    					<figcaption>Visit our new location!</figcaption>
+    				</figure>
+    				<p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, WEATHER POLICY: Seattle Public Schools are closed, and closed in Bellevue when Bellevue Public Schools are closed. It is conceivable that only one Pacific Northwest Ballet School location could be closed. Public school closures are announced on radio and TV stations. Please call the School to check if you are uncertain.</p>
+    				<p><strong>For more information call 206.441.2435 (Seattle) or 425.451.1241 (Bellevue), or e-mail us at pnbschool@pnb.org.</strong></p>
+          </fieldset>
+          </aside>
+  </div><!--End of Wrapper -->
+  <footer>
+    <ul>
+      <li>Copyright 2018 &copy;</li>
+      <li>All rights reserved</li>
+      <li><a href="http://compass.northseattle.edu/~sbyun/it111/index.html">Designed by Sung</a></li>
+      <li><a href='https://validator.w3.org/check?uri=referer'><img id='logo' src='images/logo.jpg' alt='valid'/></a></li>
+    </ul>
+  </footer>
+  </body>
+</html>

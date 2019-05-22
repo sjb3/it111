@@ -1,0 +1,216 @@
+/* CSS Styles */
+/* Refined version for submission */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+	background-image: url('../images/nutcracker.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+
+  font-family: monospace;
+}
+
+#wrapper {
+  width: 940px;
+  margin: 300px auto 20px auto;
+}
+body.home #wrapper {
+
+  width: 940px;
+  margin: 300px auto 20px auto;
+}
+body.big #wrapper {
+  width: 940px;
+  margin: 340px auto 20px auto;
+}
+/* header  */
+header {
+  /* padding-bottom:20px; */
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+	background-image: url('../images/nutcracker.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+header img {
+  width: 180px;
+  margin: 20px auto 20px auto;
+  /* padding: 20px 0; */
+}
+/* nav */
+nav {
+  height: 50px;
+  background-color: #333;
+    /* background-color: rgb(141, 255, 244, .8); */
+  color: white;
+}
+nav ul {
+  width: 1100px;
+  margin: 0 auto;
+}
+nav li {
+  float: left;
+  list-style-type: none;
+  line-height: 50px;
+  width: 33.33%;
+  text-align: center;
+  color: white;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+}
+nav a:hover {
+  background-color: red;
+  /* color: yellow;
+  font-style: italic; */
+  display: block;
+}
+/* div banner */
+#banner {
+  margin: 20px auto 20px auto;
+  align-items: center;
+  /* background:rgba(128, 128, 128,.7); */
+  /* padding-left: 5%; */
+}
+/* main */
+main{
+  /* height: 400px; */
+  padding: 40px 20px 10px 20px;
+  background:rgba(141, 255, 244,.7);
+  width: 580px;
+  float: left;
+  font-family: verdana, helvetica, arial;
+  margin-bottom: 30px;
+}
+/* aside */
+aside{
+  /* border: 1px solid white; */
+  padding: 15px 15px 15px 15px;
+  background:rgba(141, 255, 244,.6);
+  width: 340px;
+  float: right;
+  font-style: italic;
+}
+/* footer */
+footer {
+  height: 50px;
+  clear: both;
+  margin: 30px auto 0 auto;
+  /* background-color: #333; */
+    /* background-color: rgb(141, 255, 244, .8); */
+  color: white;
+  background: #ef32d9;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #89fffd, #ef32d9);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #89fffd, #ef32d9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+footer li {
+  float: left;
+  list-style-type: none;
+  line-height: 50px;
+  /* margin: 0 30px 0 30px; */
+  width: 33.3%;
+  /* color: #E85484;
+  font-style: italic; */
+  text-align: center;
+  color: white;
+}
+
+footer li:hover {
+  color: red;
+}
+footer a {
+  color: white;
+  text-decoration: none;
+}
+footer a:hover {
+  color: yellow;
+  display: block;
+}
+/* image */
+img {
+  max-width: 100%;
+  display: block;
+  border: 1px solid grey;
+}
+img.nutcracker_giphy {
+  width: 700px;
+	display: block;
+	margin: auto auto 20px auto;
+}
+img#image1 {
+  width: 35%;
+  margin: 10px 30px 10px auto;
+  float: left;
+  /* border-radius: 50%; */
+  box-shadow: 10px 10px 5px grey;
+}
+img#image2 {
+  width: 35%;
+	margin: 0 auto 20px 30px;
+  float: right;
+	box-shadow: 10px 10px 5px grey;
+	/* border-radius: 50%; */
+}
+figure {
+  margin-bottom: 30px;
+}
+figcaption {
+  padding: 8px;
+  font-size: 0.8em;
+  background: rgba(141, 255, 244);
+}
+/*+++++++++++++++++++ Typography +++++++++++++++++++*/
+p {
+  margin-bottom: 20px;
+  line-height: 1.5;
+  font-style: italic;
+}
+p.background {
+  font-style: normal;
+  background: #333;
+  color: white;
+  padding: 15px;
+  font-size: 1.1em;
+  line-height: 1.4;
+  font-family: cursive;
+}
+aside p {
+  font-size: 0.7em;
+  color: #666;
+}
+h1 {
+  magin-bottom: 10px;
+  font-family: "Times New Roman", serif;
+  font-size: 2.441em;
+  line-height: 1.15;
+}
+h2 {
+  magin-bottom: 7px;
+  font-family: "Times New Roman", serif;
+  font-size: 1.9553em;
+  line-height: 1.15;
+}
+h3 {
+  magin-bottom: 7px;
+  font-family: "Times New Roman", serif;
+  font-size: 1.563em;
+  line-height: 1.15;
+}
+h3 + figure {
+  margin: 18px 0 20px 0;
+}
+h4.valid a{
+  font-size: 1em;
+  color: white;
+}
